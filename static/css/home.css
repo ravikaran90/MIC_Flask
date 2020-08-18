@@ -1,0 +1,26 @@
+body {
+        margin:0;
+        padding:0;
+        font-family:"Arial",Arial,Arial,sans-serif;
+        color: #444;
+}
+header {
+        background-color:#DFB887;
+        height: 35px;
+        width: 100%;
+        opacity: .9;
+        margin-bottom: 10px;
+}
+div #content {
+   display: none;
+}
+div #loading {
+        top: 200 px;
+        margin: auto;
+        position: absolute;
+        z-index: 1000;
+        width: 160px;
+        height: 24px;
+        background: url('/static/spinner.gif') no-repeat;
+        cursor: wait;
+}
