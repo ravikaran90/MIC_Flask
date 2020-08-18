@@ -1,0 +1,28 @@
+<html>
+        <head>
+        <title>Welcome to Malicious IP Checker!</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+        <script type="text/javascript">
+        function preloader(){
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
+        window.onload = preloader;
+        </script>
+        </head>
+        <body>
+                <h1 style="text-align:center;color:green;font-size:32px;">Welcome to Malicious IP Checker!</h1>
+                <b><p style="color:red;" align=CENTER>Please enter the URL or IP to check for it's reputation and abuse contacts</p></b>
+                <div id="loading"> </div>
+                <!--<div id="content">Results are loading...</div>-->
+                <form method="post",action='.'>
+                        <p align=CENTER><input name="url_ip"></p>
+                        <p align=CENTER><input type = "submit" value = "Submit" onclick="loading();"></p>
+                </form>
+                <style>
+                body {
+                        background-image:url('/static/reputation.jpeg');
+                }
+                </style>
+        </body>
+</html>
